@@ -19,3 +19,23 @@ Para la solución de este ejercicio se ha propuesto por @juanriaza dos aproximac
     * `pip3 install urllib`
 * El ejemplo es tan básico que se realiza de forma secuencial, se podría paralelizar... Si todo es correcto se debería tener una ejecución como la siguiente:
 ![Principal](https://github.com/python-madrid-learn/scrapping-python/blob/master/resources/diputados_basico_ejecucion.png)
+
+# Ejecución de la segunda solución (hacerlo con scrapy)
+Esta solución es más avanzada ya que de primeras hay que tener instalado scrapy en el sistema para poder llevarla acabo. Para poder hacer eso de una forma limpia (no instalar scrapy directamente en el sistema, ya que tiene un montón de dependencias que al instalarlas nos puede dar problemas con otras librerías que dependían de ellas y se queden rotas), se recomienda el uso de una `virtualenv`. En caso de utilizar Ubuntu, hay un blogpost muy interesante [Virtualenv para python en Ubuntu](http://askubuntu.com/questions/244641/how-to-set-up-and-use-a-virtual-python-environment-in-ubuntu). Los pasos resumidos podrían ser los siguientes:
+
+* `sudo apt-get install python3-pip` Instalar pip para python3
+* `pip3 completion --bash >> ~/.bashrc` Permitir el completado automático para pip3.
+* `source ~/.bashrc` Habilitar la funcionalidad anterior
+* `pip3 install --user virtualenvwrapper` Instalar *virtualenvwrapper* que ofrece comandos sencillos para manejar los entornos virtuales.
+* `echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.bashrc` Para añadir al path de la terminal *VIRTUALENVWRAPPER_PYTHON*
+* `echo "source ~/.local/bin/virtualenvwrapper.sh" >> ~/.bashrc` Habilitar la funcionalidad anterior.
+* `export WORKON_HOME=~/.virtualenvs` Crear una variable de entorno que apunte a donde crearemos nuestros entornos virtuales.
+* `mkdir $WORKON_HOME` Crear el directorio de los entornos virtuales.
+* `echo "export WORKON_HOME=$WORKON_HOME" >> ~/.bashrc` Introducir la variable de entorno en nuestro bash local para tenerlo siempre disponible.
+* `echo "export PIP_VIRTUALENV_BASE=$WORKON_HOME" >> ~/.bashrc` Truco para decir a python que la creación de entornos virtuales tiene que ser en *$WORKON_HOME*.
+* `source ~/.bashrc` Habilitar los cambios anteriores en el sistema.
+
+Ahora falta testear lo que hemos configurado:
+* `mkvirtualenv -p python3 test` .... ERRORRRRRRRRRRRRRRR, para solucionar este error he necesitado instalar *virtualenv* mediante el gestor de paquetes de ubuntu:
+  * `sudo apt install virtualenvwrapper` Ahora parece que todo funciona...
+![virtualenv](https://github.com/python-madrid-learn/scrapping-python/blob/master/resources/virtualenv_test.png)
