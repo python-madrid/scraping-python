@@ -45,7 +45,8 @@ Ahora falta testear lo que hemos configurado:
 
 ## Ejecución del ejemplo con scrapy
 
-* `pip3 install scrapy` Instala scrapy en tu entorno virtual que este activado.
+* `pip3 install scrapy` Instala scrapy en tu entorno virtual que este activado. Habría que ver una traza parecida a la siguiente:
+![Principal](https://github.com/python-madrid-learn/scrapping-python/blob/master/resources/install_scrapy_pip.png)
 * `scrapy runspider diputados_scrapy.py` corre el script de en la consola
 * `scrapy runspider diputados_scrapy.py -o diputados.csv` misma ejecución, pero pinta los resultados en un csv.
 
