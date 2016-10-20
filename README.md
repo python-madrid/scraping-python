@@ -7,7 +7,7 @@ Dentro del grupo de aprendizaje python se ha comentado de scrapear a los diputad
 # Links de interés
 
 Descripción | Enlace | Comentario
----------------------------------
+------------|--------|-------------
 Curso Python | [Sololearn](https://www.sololearn.com/Play/Python) | Curso básico e interactivo sobre python
 Normas de estilo | [Pep8](https://www.python.org/dev/peps/pep-0008/) | Normas de estilo de codigo para python. Seguirlas siempre que se pueda.
 Curso Python | [Datacamp](https://hourofpython.com/una-introduccion-visual-a-python/index.html) | Una introducción visual para aprender a programar Python utilizando tortugas
