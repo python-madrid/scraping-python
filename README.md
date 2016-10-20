@@ -18,5 +18,6 @@ Videotutorial | [JesúsConde](https://www.youtube.com/playlist?list=PLEtcGQaT56c
 Recursos | [AwesomePython](http://awesome-python.com/) | Listado de recursos que se pueden utilizar con python
 Recursos | [Aprender Python Argentina](https://argentinaenpython.com/quiero-aprender-python/) | Listado de recursos para aprender Python ofrecido por cracks argentinos.
 Recursos | [Guia markdown github](https://guides.github.com/features/mastering-markdown/) | Esto no es un recurso pyhton, pero es la guía para escribir markdown en github.
+Blog | [RicardoMoya](http://jarroba.com/scraping-python-beautifulsoup-ejemplos/) | Blog interesante de scrapping en python con BeautifulSoup
 
 Cualquier referencia a añadir, PR al canto.
